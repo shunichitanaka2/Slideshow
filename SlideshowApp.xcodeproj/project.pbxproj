@@ -14,6 +14,10 @@
 		CFB023B41D4F3DD1005AC143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB023B21D4F3DD1005AC143 /* LaunchScreen.storyboard */; };
 		CFB023BF1D4F3DD1005AC143 /* SlideshowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB023BE1D4F3DD1005AC143 /* SlideshowAppTests.swift */; };
 		CFB023CA1D4F3DD1005AC143 /* SlideshowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB023C91D4F3DD1005AC143 /* SlideshowAppUITests.swift */; };
+		CFB023D81D503E94005AC143 /* resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFB023D71D503E94005AC143 /* resources.bundle */; };
+		CFB023DA1D505957005AC143 /* Picture in Resources */ = {isa = PBXBuildFile; fileRef = CFB023D91D505957005AC143 /* Picture */; };
+		CFB023DE1D519772005AC143 /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB023DD1D519772005AC143 /* ScaleView.swift */; };
+		D13A7103A52D00E042CE6DB7 /* Pods_SlideshowApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAE25B69BDEE00BA062DD37 /* Pods_SlideshowApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7AAE25B69BDEE00BA062DD37 /* Pods_SlideshowApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideshowApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD701E392ECD2D53D4514622 /* Pods-SlideshowApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideshowApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideshowApp/Pods-SlideshowApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CDFA368B0440CE43AB69AF35 /* Pods-SlideshowApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideshowApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideshowApp/Pods-SlideshowApp.release.xcconfig"; sourceTree = "<group>"; };
 		CFB023A61D4F3DD1005AC143 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB023A91D4F3DD1005AC143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB023AB1D4F3DD1005AC143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		CFB023C51D4F3DD1005AC143 /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB023C91D4F3DD1005AC143 /* SlideshowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowAppUITests.swift; sourceTree = "<group>"; };
 		CFB023CB1D4F3DD1005AC143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB023D71D503E94005AC143 /* resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resources.bundle; sourceTree = "<group>"; };
+		CFB023D91D505957005AC143 /* Picture */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Picture; sourceTree = "<group>"; };
+		CFB023DD1D519772005AC143 /* ScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13A7103A52D00E042CE6DB7 /* Pods_SlideshowApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6135FDA57A011579FE20A431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AAE25B69BDEE00BA062DD37 /* Pods_SlideshowApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7339A8FE512B2836262F9FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD701E392ECD2D53D4514622 /* Pods-SlideshowApp.debug.xcconfig */,
+				CDFA368B0440CE43AB69AF35 /* Pods-SlideshowApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CFB0239D1D4F3DD1005AC143 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				CFB023BD1D4F3DD1005AC143 /* SlideshowAppTests */,
 				CFB023C81D4F3DD1005AC143 /* SlideshowAppUITests */,
 				CFB023A71D4F3DD1005AC143 /* Products */,
+				C7339A8FE512B2836262F9FF /* Pods */,
+				6135FDA57A011579FE20A431 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +128,11 @@
 			isa = PBXGroup;
 			children = (
 				CFB023A91D4F3DD1005AC143 /* AppDelegate.swift */,
+				CFB023DD1D519772005AC143 /* ScaleView.swift */,
 				CFB023AB1D4F3DD1005AC143 /* ViewController.swift */,
+				CFB023D71D503E94005AC143 /* resources.bundle */,
 				CFB023AD1D4F3DD1005AC143 /* Main.storyboard */,
+				CFB023D91D505957005AC143 /* Picture */,
 				CFB023B01D4F3DD1005AC143 /* Assets.xcassets */,
 				CFB023B21D4F3DD1005AC143 /* LaunchScreen.storyboard */,
 				CFB023B51D4F3DD1005AC143 /* Info.plist */,
@@ -132,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFB023CE1D4F3DD1005AC143 /* Build configuration list for PBXNativeTarget "SlideshowApp" */;
 			buildPhases = (
+				000B5AD6DCA459C96F511373 /* [CP] Check Pods Manifest.lock */,
 				CFB023A21D4F3DD1005AC143 /* Sources */,
 				CFB023A31D4F3DD1005AC143 /* Frameworks */,
 				CFB023A41D4F3DD1005AC143 /* Resources */,
+				BD5ADD0D5E63F57315E5D167 /* [CP] Embed Pods Frameworks */,
+				6D1915ACE343CF0D6753011A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB023B41D4F3DD1005AC143 /* LaunchScreen.storyboard in Resources */,
+				CFB023DA1D505957005AC143 /* Picture in Resources */,
 				CFB023B11D4F3DD1005AC143 /* Assets.xcassets in Resources */,
 				CFB023AF1D4F3DD1005AC143 /* Main.storyboard in Resources */,
+				CFB023D81D503E94005AC143 /* resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,11 +289,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		000B5AD6DCA459C96F511373 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D1915ACE343CF0D6753011A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideshowApp/Pods-SlideshowApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD5ADD0D5E63F57315E5D167 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideshowApp/Pods-SlideshowApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CFB023A21D4F3DD1005AC143 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB023DE1D519772005AC143 /* ScaleView.swift in Sources */,
 				CFB023AC1D4F3DD1005AC143 /* ViewController.swift in Sources */,
 				CFB023AA1D4F3DD1005AC143 /* AppDelegate.swift in Sources */,
 			);
@@ -399,6 +486,7 @@
 		};
 		CFB023CF1D4F3DD1005AC143 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD701E392ECD2D53D4514622 /* Pods-SlideshowApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
@@ -410,6 +498,7 @@
 		};
 		CFB023D01D4F3DD1005AC143 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFA368B0440CE43AB69AF35 /* Pods-SlideshowApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
@@ -484,6 +573,7 @@
 				CFB023D01D4F3DD1005AC143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFB023D11D4F3DD1005AC143 /* Build configuration list for PBXNativeTarget "SlideshowAppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +582,7 @@
 				CFB023D31D4F3DD1005AC143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFB023D41D4F3DD1005AC143 /* Build configuration list for PBXNativeTarget "SlideshowAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +591,7 @@
 				CFB023D61D4F3DD1005AC143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
